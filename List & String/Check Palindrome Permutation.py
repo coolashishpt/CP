@@ -1,5 +1,5 @@
 
-
+# Checker
 def check_pal_per(a):
     l = []
 
