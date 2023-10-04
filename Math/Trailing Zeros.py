@@ -1,3 +1,4 @@
+# Naive Solution
 def trailingZeros(nums):
 
     res = 1
