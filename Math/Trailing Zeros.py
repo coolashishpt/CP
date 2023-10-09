@@ -2,9 +2,9 @@
 def trailingZeros(nums):
 
     res = 1
-    for num in range(1, nums+1):
+    for num in range(2, nums+1):
         res *= num
-
+    print(res)
     ans = 0
     while res > 0:
         if res % 10 == 0:
@@ -16,5 +16,15 @@ def trailingZeros(nums):
 
     return ans
 
-print(trailingZeros(0))
+# Optimize Solution
 
+def trailingZerosOptimizeV1(nums):
+    res = 0
+    while nums >= 5:
+        nums //= 5
+        res += nums
+
+    return res
+print(trailingZeros(50))
+
+print(trailingZerosOptimizeV1(50))
